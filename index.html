@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/33cc84db59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="IMAGES/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        <div class="header-text">
+            <p>FRESHER</p>
+            <h1>Hi, I'm <span>Reddy Bhavana</span> <br>Siriveli From India.</h1>
+        </div>
+    </div>
+
+   </div>
+   <!--------------about------------- --> 
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMAGES/pr1.jpg" height="500px" alt="About Me Image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate Software Engineer with a strong foundation in programming and problem-solving. I have 
+                    experience in Python, SQL, HTML, CSS, and the basics of Machine Learning. I aim to create scalable and 
+                    efficient software solutions. I’m always eager to learn and grow in the tech industry.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Certificates')">Certificates</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>PYTHON</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>HTML & CSS</span></li>
+                            <li><span>BASICS OF ML</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certificates">
+                        <ul>
+                            <li><span>AI-ML</span><br>A 10 week virtual internship certificate from Edu-skills.</li>
+                            <li><span>Crash course on Python</span> <br>An online course authorized by Google offerd through Coursera.</li>
+                            <li><span>SQL</span><br> "Introduction to SQL" from simplilearn.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>Python Full Stack training at Palle Technologies Institute</li>
+                            <li><span>2024</span><br>B.Tech from Aditya college of Engineering, Madanapalle</li>
+                            <li><span>2020</span><br>Intermediate from Sri Chaitanya juniour college</li>
+                            <li><span>2018</span><br>10th class from Z.P.H.S Madanapalle</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- ---------PROJECTS----------  -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-bug"></i>
+                <h2>Bug Prediction Using ML</h2>
+                <p>Project aimed at leveraging machine learning algorithms to predict and identify defects in software applications 
+                    before they impact production...</p>
+                <a href="Software_Defect_Prediction/" class="button" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>Hangman</h2>
+                <p>This Hangman game project implements the classic word-guessing game using Python, where the player guesses letters of a randomly selected word...</p>
+                <a href="Hangman/" class="button" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mug-saucer"></i>
+                <h2>Coffee-Machine</h2>
+                <p>This project is a simple coffee machine simulator that allows users to order coffee, check available resources, and process payments...</p>
+                <a href="Coffee_Machine/" class="button" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------PORTFOLIO--------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="certificate-list">
+            <div class="certificate-item">
+                <h2>AI-ML</h2>
+                <a href="IMAGES/AI-ML.jfif" target="_blank">Click here</a>
+            </div>
+            <div class="certificate-item">
+                <h2>PYTHON</h2>
+                <a href="IMAGES/PYTHON.jfif" target="_blank">Click here</a>
+            </div>
+            <div class="certificate-item">
+                <h2>SQL</h2>
+                <a href="IMAGES/SQL.jfif" target="_blank">Click here</a>
+            </div>
+            <div class="certificate-item">
+                <h2>TECHSAKSHAM</h2>
+                <a href="IMAGES/TECHSAKSHAM.jfif" target="_blank">Click here</a>
+            </div>
+
+        </div>
+    </div>
+ </div>
+<!-- --------------CONTACT------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>reddybhavana@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>9398855921</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="IMAGES/Resume.pdf" Download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="YOUR NAME" required>
+                    <input type="email" name="Email" placeholder="YOUR EMAIL" required>
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+<div class="copyright">
+    <p>Copyright © Bhavana. </p>
+</div>
+
+</div>
+ </div>
+
+
+   <script>
+    // Fixing the variable declarations
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        // Remove the active link class from all tabs
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        // Remove the active tab class from all tab contents
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        // Add the active-link class to the clicked tab
+        document.querySelector(`.tab-links[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+        // Display the content of the selected tab
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+   </script>   
+   <script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+   </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMt76ceuPSmC-nxHqy2GiXitg4PFLCO78HKz0ZN3NO6OYr9whejDOoP5AZuwvEkBRqDg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
